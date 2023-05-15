@@ -1,0 +1,58 @@
+[project]
+name = "utctime"
+version = "0.1.0-dev"
+
+description = "A simple and type-safe way of working with UTC datetimes and ISO 8601 strings."
+
+requires-python = ">= 3.7"
+readme = "README.rst"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+keywords = ["utc", "datetime", "iso", "iso8601", "time", "utility", "util"]
+dependencies = []
+
+[project.urls]
+Documentation = "https://utctime.readthedocs.io"
+Source = "https://github.com/dmayo3/utctime"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[tool.bumpver]
+current_version = "0.1.0-dev"
+version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"utctime/__init__.py" = [
+    "{version}",
+]
+"README.rst" = [
+    "{version}",
+]
