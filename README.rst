@@ -1,4 +1,4 @@
-UTC Time v0.1.1-dev
+UTC Time v0.1.1-alpha
 -------------------
 
 This is a tiny utility to simplify the everyday pain of working with UTC datetimes
