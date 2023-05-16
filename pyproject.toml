@@ -1,6 +1,6 @@
 [project]
 name = "utctime"
-version = "0.1.0-dev"
+version = "0.1.1-dev"
 
 description = "A simple and type-safe way of working with UTC datetimes and ISO 8601 strings."
 
@@ -38,7 +38,7 @@ build-backend = "setuptools.build_meta"
 requires = ["setuptools", "wheel"]
 
 [tool.bumpver]
-current_version = "0.1.0-dev"
+current_version = "0.1.1-dev"
 version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
 commit_message = "Bump version {old_version} -> {new_version}"
 commit = true
