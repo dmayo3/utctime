@@ -1,16 +1,28 @@
 UTC Time v0.1.0-dev
 -------------------
 
-A tiny library to simplify the everyday pain of working with UTC and ISO 8601 date times in Python.
+This is a tiny utility to simplify the everyday pain of working with UTC datetimes
+and ISO 8601 strings in Python.
 
-Goals:
+Motivation
+----------
 
-1. Easily create UTC datetimes without thinking about it.
-2. Type-safe. Don't accidentally mix and match UTC with non-UTC datetimes.
-3. Convert to and from ISO 8601 datetimes with ease (and use Z as the timezone instead of +00:00).
-4. Don't accidentally convert to anything else.
-5. No dependencies. We don't need to pull in pytz just for UTC.
-6. Interoperate with regular datetime objects where necessary.
+1. **Easy**: create UTC datetimes without thinking about it.
+
+2. **Type-safe**: don't accidentally mix and match UTC with non-UTC or naive datetimes.
+
+3. **ISO 8601**: convert to and from ISO 8601 datetimes with ease (and use `Z` as the timezone instead of `+00:00`).
+
+4. **Safe Format**: don't accidentally convert to anything else.
+
+5. **Flexible Parsing**: parses various ISO 8601 formats - with/without microseconds and/or with `Z` or `+HH:MM` timezones.
+
+6. **No Dependencies**. we don't need to pull in `pytz` just for UTC.
+
+7. **Interoperate**: with regular `datetime` objects where necessary.
+
+8. **Familiar**: similar names and conventions to working with `datetime`.
+
 
 Checkout the docs link below for more information.
 
