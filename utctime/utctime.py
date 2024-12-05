@@ -34,6 +34,7 @@ class UtcTime:
     methods to create :class:`utctime.UtcTime` instances.
     """
 
+    # pylint: disable=too-many-positional-arguments
     def __init__(
         self: UtcTime,
         year: int,
@@ -143,6 +144,7 @@ class UtcTime:
         """Converts back to a regular :py:class:`datetime.datetime` with a UTC timezone."""
         return self._dt
 
+    # pylint: disable=too-many-positional-arguments
     def replace(
         self: UtcTime,
         year: Optional[int] = None,
