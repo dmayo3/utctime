@@ -29,6 +29,9 @@ classifiers = [
 keywords = ["utc", "datetime", "iso", "iso8601", "time", "utility", "util"]
 dependencies = []
 
+[project.optional-dependencies]
+docs = ["sphinx-rtd-theme >= 1.2.0", "pytest >= 6.2.0"]
+
 [project.urls]
 Documentation = "https://utctime.readthedocs.io"
 Source = "https://github.com/dmayo3/utctime"
